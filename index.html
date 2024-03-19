@@ -11,22 +11,22 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="img/search.png" alt=""></button>
+            <button><img src="img1/search.png" alt=""></button>
         </div>
         <div class="weather">
-            <img src="img/rain.png" class="weather-icon">
+            <img src="img1/rain.png" class="weather-icon">
             <h1 class="temp"> 22 c</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="img/humidity.png">
+                    <img src="img1/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>humisity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/wind.png">
+                    <img src="img1/wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>wind speed</p>
@@ -60,19 +60,19 @@ async function checkWeather(city){
     document.querySelector(".wind").innerHTML=data.wind.speed +"km/h";
 
     if(data.weather[0].main=="Clouds"){
-        weatherIcon.src="img/clouds.png";
+        weatherIcon.src="img1/clouds.png";
     }
     else if(data.weather[0].main=="Clear"){
-        weatherIcon.src="img/clear.png";
+        weatherIcon.src="img1/clear.png";
     }
     else if(data.weather[0].main=="Rain"){
-        weatherIcon.src="img/rain.png";
+        weatherIcon.src="img1/rain.png";
     }
     else if(data.weather[0].main=="Drizzle"){
-        weatherIcon.src="img/drizzle.png";
+        weatherIcon.src="img1/drizzle.png";
     }
     else if(data.weather[0].main=="Mist"){
-        weatherIcon.src="img/mist.png";
+        weatherIcon.src="img1/mist.png";
     }
     
 }
